@@ -451,8 +451,8 @@
 
 <!-- #region backdrop -->
 
-    <div class="backdrop is-open">
-      <div class="modal">
+<div class="backdrop is-open">
+  <div class="modal">
 <button class="close-btn" type="button">
 <svg class="close-btn-icon" width="8" height="8">
   <use href="./images/icons.svg#icon-close"></use>
@@ -468,11 +468,42 @@
       <use href="./images/icons.svg#icon-user"></use>
     </svg>
   </div>
+  <div class="modal-container-block">
+    <label class="modal-form-label" for="user-phone">Phone</label>
+  <div class="modal-form-input-cont">
+    <input class="modal-form-input" required id="user-phone" name="user-text" type="text">
+    <svg width="12px" height="12px" class="modal-form-icon">
+      <use href="./images/icons.svg#icon-phone"></use>
+    </svg>
   </div>
-
-</form>      
+  <div class="modal-container-block">
+    <label class="modal-form-label" for="user-mail">Email</label>
+  <div class="modal-form-input-cont">
+    <input class="modal-form-input" required id="user-mail" name="user-text" type="text">
+    <svg width="12px" height="12px" class="modal-form-icon">
+      <use href="./images/icons.svg#icon-mail"></use>
+    </svg>
+  </div>
 </div>
-    </div>
+
+<div class="cont-user-text">
+  <label class="modal-form-label" for="user-comment">Comment</label>
+  <textarea name="user-comment" id="user-comment" placeholder="Text input"
+  class="user-comment"></textarea>
+</div>
+
+<div class="modal-form-con-checkbox">
+  <input type="checkbox" class="checkbox visually-hidden" id="user-checkbox">
+  <label class="label-checkbox" for="user-checkbox"><span class="custom-checkbox">
+    <svg width="10px" height="8px">
+      <use href="./images/icons.svg#icon-checked"></use>
+    </svg>
+  </span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+</div>
+<botton class="botton-submit" type="submit">Send</botton>
+</form>      
+  </div>
+</div>
 <!-- #endregion backdrop -->
   </body>
 </html>
