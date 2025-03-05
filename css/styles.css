@@ -519,6 +519,8 @@ border-width: 1px;
 border-color: rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: #e7e9fc;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover {
@@ -556,6 +558,7 @@ margin-bottom: 4px;
 .modal-form-input-cont {
 position: relative;
 margin-bottom: 8px;
+
 }
 .modal-form-input {
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -566,8 +569,9 @@ padding-left: 38px;
 outline: transparent;
 }
 
-.modal-form-input:hover {
+.modal-form-input:hover, .modal-form-input:focus {
     border: 1px solid #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icon {
     position: absolute;
@@ -580,6 +584,7 @@ fill: #2e2f42;
 .modal-form-input:focus + .modal-form-icon,
 .modal-form-input:hover + .modal-form-icon {
 fill:  #4d5ae5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-comment {
@@ -598,6 +603,7 @@ resize: none;
 .user-comment:focus {
 border: 1px solid #4d5ae5;
 outline: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-comment::placeholder {
@@ -647,12 +653,13 @@ color: #4d5ae5;
 }
 
 
-.botton-submit {
+.button-submit {
 display: flex;
 align-items: flex-start;
 justify-content: flex-start;
 flex-direction: row;
 gap: 10px;
+border: none;
 border-radius: 4px;
 padding: 16px 32px;
 width: 169px;
@@ -670,6 +677,6 @@ cursor: pointer;
 margin-top: 24px;
 margin-left: auto;
 margin-right: auto;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
